@@ -1,63 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>webtech-lab-01</title>
-    </head>
-    <body>
-        <div class="flex-container">
-            <div>Nombre: Andrés Concha</div>
-            <div>Carrera: Ingeniería Civil Industrial</div>
-            <div>Año de admisión: 2022</div>
-            <p>Soy Andrés Concha, estudiante de Ingeniería Civil Industrial, y estoy muy emocionado para cursar Web Technologies.</p>
-            <p>El curso "Paradigmas de la Programación fue un ramo que me abrió los ojos respecto a lo que se puede hacer en programación y lo cuanto que me gusta hacerlo</p>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webtech-lab-01</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="site-identity">
+            <h1>Andrés Concha</h1>
+            <p>Estudiante de Ingeniería Civil Industrial</p>
         </div>
-        <div>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#enlaces">Enlaces</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Carrera: Ingeniería Civil Industrial<br>
+                Año de admisión: <time datetime="2022">2022</time>
+            </p>
+            <p>
+                Soy Andrés Concha, estudiante de Ingeniería Civil Industrial, y estoy muy
+                emocionado para cursar Web Technologies. El curso "Paradigmas de la
+                Programación" fue un ramo que me abrió los ojos respecto a lo que se puede
+                hacer en programación y lo cuanto que me gusta hacerlo.
+            </p>
+        </section>
+
+        <section id="herramientas">
+            <h2>Herramientas y Lenguajes</h2>
             <table>
                 <tr>
-                    <th>Herramientas y Lenguajes</th>
-                    
+                    <th>Herramienta</th>
+                </tr>
+                <tr><td>Python</td></tr>
+                <tr><td>Javascript</td></tr>
+                <tr><td>HTML</td></tr>
+                <tr><td>CSS</td></tr>
+            </table>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <div class="project-grid">
+            <article>
+                <h3>Item 1: Buscaminas en Paradigmas de la Programación</h3>
+                <p>
+                    Para el ramo Paradigmas de la Programación, implementé un juego de
+                    buscaminas utilizando HTML, CSS y JavaScript. Desde antes me gusta el
+                    juego así que fue un buen match para mí.
+                </p>
+            </article>
+
+            <article>
+                <h3>Item 2: Práctica Pre Profesional</h3>
+                <p>
+                    Durante la práctica pre profesional, tuve que hacer un programa que
+                    filtrara los asientos contables de una pyme, de tal manera que se
+                    detallara el inventario y los costos/ingresos de cada sector de la
+                    empresa.
+                </p>
+            </article>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería</h2>
+            <div class="gallery-row">
+                <figure>
+                    <img src="https://i.redd.it/mistborn-atium-stained-glass-v0-o1tx6cdon6kf1.jpg?width=6120&format=pjpg&auto=webp&s=798a8b7308cf42dcc91666681baa3e9bcede6092"
+                         alt="Mi vitral del metal Atium de la saga Mistborn"
+                         width="300" height="auto">
+                    <figcaption>
+                        Este es un vitral que hice hace un año. Representa el metal "Atium",
+                        el metal más poderoso de la saga de libros "Mistborn".
+                    </figcaption>
+                </figure>
+                <aside>
+                    <p>
+                        El Atium es el metal más raro y valioso del sistema de
+                        magia de Mistborn, basicamente deja al usuario ver todos posibles futuros y así poder anticipar los movimientos de los enemigos.
+                    </p>
+                </aside>
+            </div>
+        </section>
+
+        <section id="enlaces">
+            <h2>Enlaces</h2>
+            <table>
+                <tr>
+                    <th>Sitio</th>
+                    <th>Link</th>
                 </tr>
                 <tr>
-                    <td>Python</td>
+                    <td>Repositorio de GitHub</td>
+                    <td><a href="https://github.com/Ayshelled/ayshelled.github.io" target="_blank">Link</a></td>
                 </tr>
                 <tr>
-                    <td>Javascript</td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
+                    <td>Nueva canción de mi banda favorita</td>
+                    <td><a href="https://www.youtube.com/watch?v=Ws_mJPTmo7Y" target="_blank">Link</a></td>
                 </tr>
             </table>
-        </div>
-        <div>
-            <h2>Item 1: Buscaminas en Paradigmas de la Programación</h2>
-            <p>Para el ramo Paradigmas de la Programación, implementé un juego de buscaminas utilizando HTML, CSS y JavaScript. Desde antes me gusta el juego así que fue un buen match para mí.</p>
-        </div>
-                <div>
-            <h2>Item 2: Practica Pre Profesional</h2>
-            <p>Durante la práctica pre profesional, tuve que hacer un programa que filtrara los asientos contables de una pyme, de tal manera que se detallara el inventario y los costos/ingresos de cada sector de la empresa.</p>
-        </div>
-        <div>
-            <h2>Imagen: Vitral de Mistborn</h2>
-            <img src="https://i.redd.it/mistborn-atium-stained-glass-v0-o1tx6cdon6kf1.jpg?width=6120&format=pjpg&auto=webp&s=798a8b7308cf42dcc91666681baa3e9bcede6092" alt="Mi vitral de del metal Atium de la saga Mistborn" width="300" height ="auto">
-            <figcaption>Este es un vitral que hice hace un año. Representa el metal "Atium", el metal más poderoso de la saga de libros "Mistborn".</figcaption>
-        </div>
-        <div><table>
-            <tr>
-                <th>Sitio</th>
-                <th>Link</th>
-            </tr>
-            <tr>
-                <td>Repositorio de GitHub.</td>
-                <td><a href="https://github.com/Ayshelled/ayshelled.github.io" target="_blank">Link</a></td>
-            </tr>
-            <tr>
-                <td>Nueva canción de mi banda favorita.</td>
-                <td><a href="https://www.youtube.com/watch?v=Ws_mJPTmo7Y" target="_blank">Link</a></td>
-        </table></div>
-    </body>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <div class="form-row">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Contacto: Andrés Concha &mdash;
+            <a href="https://github.com/Ayshelled">github.com/Ayshelled</a>
+        </address>
+        <p>webtech-lab-01</p>
+    </footer>
+</body>
 </html>
