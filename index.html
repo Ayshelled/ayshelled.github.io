@@ -11,40 +11,42 @@
     <header class="site-header">
         <div class="site-identity">
             <h1>Andrés Concha</h1>
-            <p>Estudiante de Ingeniería Civil Industrial</p>
+            <p>Industrial Engineering Student</p>
         </div>
         <nav class="site-nav">
             <ul>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#enlaces">Enlaces</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-mi">About me</a></li>
+                <li><a href="#herramientas">Tools</a></li>
+                <li><a href="#proyectos">Projects</a></li>
+                <li><a href="#galeria">Gallery</a></li>
+                <li><a href="#shows">Shows</a></li>
+                <li><a href="#enlaces">Links</a></li>
+                <li><a href="#theme">Theme</a></li>
+                <li><a href="#contacto">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="sobre-mi">
-            <h2>Sobre mí</h2>
+            <h2>About me</h2>
             <p>
-                Carrera: Ingeniería Civil Industrial<br>
-                Año de admisión: <time datetime="2022">2022</time>
+                Career: Industrial Engineering<br>
+                Admission Year: <time datetime="2022">2022</time>
             </p>
             <p>
-                Soy Andrés Concha, estudiante de Ingeniería Civil Industrial, y estoy muy
-                emocionado para cursar Web Technologies. El curso "Paradigmas de la
-                Programación" fue un ramo que me abrió los ojos respecto a lo que se puede
-                hacer en programación y lo cuanto que me gusta hacerlo.
+                I am Andrés Concha, a student of Industrial Engineering, and I am very
+                excited to take Web Technologies. The course "Paradigms of Programming"
+                was a subject that opened my eyes to what can be done in programming and
+                how much I enjoy doing it.
             </p>
         </section>
 
         <section id="herramientas">
-            <h2>Herramientas y Lenguajes</h2>
+            <h2>Tools and Languages</h2>
             <table>
                 <tr>
-                    <th>Herramienta</th>
+                    <th>Tool</th>
                 </tr>
                 <tr><td>Python</td></tr>
                 <tr><td>Javascript</td></tr>
@@ -54,95 +56,127 @@
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2>Projects</h2>
 
             <div class="project-grid">
             <article>
-                <h3>Item 1: Buscaminas en Paradigmas de la Programación</h3>
+                <h3>Item 1: Minesweeper Game for Paradigmas de la Programación</h3>
                 <p>
-                    Para el ramo Paradigmas de la Programación, implementé un juego de
-                    buscaminas utilizando HTML, CSS y JavaScript. Desde antes me gusta el
-                    juego así que fue un buen match para mí.
+                    For the course Paradigmas de la Programación, I implemented a minesweeper game using HTML, CSS, and JavaScript. Since I have always liked the game, it was a great fit for me.
                 </p>
             </article>
 
             <article>
-                <h3>Item 2: Práctica Pre Profesional</h3>
+                <h3>Item 2: Pre Profesional Practice</h3>
                 <p>
-                    Durante la práctica pre profesional, tuve que hacer un programa que
-                    filtrara los asientos contables de una pyme, de tal manera que se
-                    detallara el inventario y los costos/ingresos de cada sector de la
-                    empresa.
+                    During the pre-professional practice, I had to create a program that
+                    filtered the accounting entries of a small business, in such a way that the
+                    inventory and costs/incomes of each sector of the
+                    company were detailed.
                 </p>
             </article>
             </div>
         </section>
 
         <section id="galeria">
-            <h2>Galería</h2>
+            <h2>Gallery</h2>
             <div class="gallery-row">
                 <figure>
                     <img src="https://i.redd.it/mistborn-atium-stained-glass-v0-o1tx6cdon6kf1.jpg?width=6120&format=pjpg&auto=webp&s=798a8b7308cf42dcc91666681baa3e9bcede6092"
-                         alt="Mi vitral del metal Atium de la saga Mistborn"
+                         alt="My stained glass window of the Atium metal from the Mistborn series"
                          width="300" height="auto">
                     <figcaption>
-                        Este es un vitral que hice hace un año. Representa el metal "Atium",
-                        el metal más poderoso de la saga de libros "Mistborn".
+                        This is a stained glass window I made a year ago. It represents the "Atium" metal,
+                        the most powerful metal in the "Mistborn" book series.
                     </figcaption>
                 </figure>
                 <aside>
                     <p>
-                        El Atium es el metal más raro y valioso del sistema de
-                        magia de Mistborn, basicamente deja al usuario ver todos posibles futuros y así poder anticipar los movimientos de los enemigos.
+                        Atium is the rarest and most valuable metal in the Mistborn magic system, basically allowing the user to see all possible futures and thus anticipate the moves of their enemies.
                     </p>
                 </aside>
             </div>
         </section>
+        
+        <section id="shows">
+            <h2>Shows</h2>
+            <h3>Add New Show</h3>
+            <div id="data">
+                
+                <input type="text" id="nameInput" placeholder="Title">
+                <input type="text" id="genreInput" placeholder="Genre">
+                <label>
+                    <input type="checkbox" id="completeInput">
+                    Complete
+                </label>
+                <button onclick="addShow()">Add Show</button>
+            </div>
+            <h3>Filter Shows</h3>
+            <div id="filter">
+                
+                <label for="filterSelect">Filter by:</label>
+                <select id="filterSelect" onchange="filterShows()">
+                    <option value="all">All</option>
+                    <option value="complete">Complete</option>
+                    <option value="incomplete">Incomplete</option>
+                </select>
+                <input type="text" id="filterInput" placeholder="Search Title or Genre..." onkeyup="filterShows()">
+            </div>
+            <h3>TV Shows</h3>
+            <div class = "showList">
+                
+
+            </div>
+        </section>
 
         <section id="enlaces">
-            <h2>Enlaces</h2>
+            <h2>Links</h2>
             <table>
                 <tr>
                     <th>Sitio</th>
                     <th>Link</th>
                 </tr>
                 <tr>
-                    <td>Repositorio de GitHub</td>
+                    <td>GitHub Repository</td>
                     <td><a href="https://github.com/Ayshelled/ayshelled.github.io" target="_blank">Link</a></td>
                 </tr>
                 <tr>
-                    <td>Nueva canción de mi banda favorita</td>
+                    <td>New Song by My Favorite Band</td>
                     <td><a href="https://www.youtube.com/watch?v=Ws_mJPTmo7Y" target="_blank">Link</a></td>
                 </tr>
             </table>
         </section>
 
         <section id="contacto">
-            <h2>Contacto</h2>
+            <h2>Contact</h2>
             <form>
                 <div class="form-row">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Name</label>
                     <input type="text" id="nombre" name="nombre" autocomplete="name" required>
                 </div>
                 <div class="form-row">
-                    <label for="email">Correo electrónico</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" autocomplete="email" required>
                 </div>
                 <div class="form-row">
-                    <label for="mensaje">Mensaje</label>
+                    <label for="mensaje">Message</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
                 </div>
-                <button type="submit">Enviar mensaje</button>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
-
+    <section id="theme">
+        <h2>Theme Toggle</h2>
+        <button id="themeToggle" onclick="toggleTheme()" aria-pressed="false">Toggle Theme</button>
+    </section>
     <footer>
         <address>
-            Contacto: Andrés Concha &mdash;
+            Contact: Andrés Concha &mdash;
             <a href="https://github.com/Ayshelled">github.com/Ayshelled</a>
         </address>
         <p>webtech-lab-01</p>
     </footer>
 </body>
 </html>
+
